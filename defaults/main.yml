@@ -413,6 +413,11 @@ neutron_l3_cleanup_on_shutdown: False
 # Specify the maximum number of L3 agents per tenant network. Defaults to the total number of agents deployed
 # neutron_l3_agents_max: 2
 
+# Install/remove conntrackd on L3 Agents. The default conntrackd service
+# is disabled in any case. Valid values are 'absent', 'present'. The package
+# installation honors `neutron_package_state`.
+neutron_l3_conntrackd: 'absent'
+
 ###
 ### DHCP Agent Plugin Configuration
 ###
