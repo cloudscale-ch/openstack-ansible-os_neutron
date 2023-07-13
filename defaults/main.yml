@@ -395,6 +395,11 @@ neutron_l3_ha_net_cidr: 169.254.192.0/18
 
 neutron_l3_cleanup_on_shutdown: False
 
+# Install/remove conntrackd on L3 Agents. The default conntrackd service
+# is disabled in any case. Valid values are 'absent', 'present'. The package
+# installation honors `neutron_package_state`.
+neutron_l3_conntrackd: 'absent'
+
 ###
 ### DHCP Agent Plugin Configuration
 ###
