@@ -54,7 +54,7 @@ neutron_optional_calico_pip_packages:
   - etcd3gw
 
 neutron_optional_fwaas_pip_packages:
-  - "git+{{ neutron_fwaas_git_repo }}@{{ neutron_fwaas_git_install_branch }}#egg=neutron-fwaas"
+  - neutron-fwaas
 
 neutron_optional_vpnaas_pip_packages:
   - neutron_vpnaas
